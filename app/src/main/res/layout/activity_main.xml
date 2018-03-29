@@ -27,7 +27,7 @@
             android:freezesText="true"
             android:hint="@string/key_hint"
             android:inputType="number"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             android:freezesText="true"
             android:hint="@string/value_hint"
             android:inputType="number"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
