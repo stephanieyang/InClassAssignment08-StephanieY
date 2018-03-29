@@ -6,4 +6,6 @@
     <string name="value_hint">Type value here</string>
     <string name="btn_write">Write to cloud</string>
     <string name="btn_read">Read from cloud</string>
+    <string name="no_key_text">Cannot find key</string>
+    <string name="failure_text">A failure occurred</string>
 </resources>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.inclassassignment08_stephaniey.MainActivity">
@@ -10,13 +9,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/key_text" />
+            android:text="@string/key_text"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/entry_key"
@@ -26,14 +26,14 @@
             android:layout_marginTop="8dp"
             android:freezesText="true"
             android:hint="@string/key_hint"
-            android:inputType="number"
+            android:inputType="text"
             android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="@string/value_text" />
+            android:text="@string/value_text"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/entry_value"
@@ -43,54 +43,40 @@
             android:layout_marginTop="8dp"
             android:freezesText="true"
             android:hint="@string/value_hint"
-            android:inputType="number"
+            android:inputType="text"
             android:textSize="16sp" />
 
     </LinearLayout>
 
-
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_above="@id/btn_write"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_above="@id/btn_write"
         android:background="@android:color/darker_gray" />
 
     <Button
         android:id="@+id/btn_write"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/btn_read"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textAllCaps="true"
+        android:onClick="writeToDatabase"
         android:text="@string/btn_write"
-        android:layout_above="@id/btn_read"/>
+        android:textAllCaps="true" />
 
     <Button
         android:id="@+id/btn_read"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textAllCaps="true"
+        android:onClick="readFromDatabase"
         android:text="@string/btn_read"
-        android:layout_alignParentBottom="true" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true">
+        android:textAllCaps="true" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:textAllCaps="true"
-            android:text="@string/btn_write" />
-
-    </LinearLayout>
 
 </RelativeLayout>
